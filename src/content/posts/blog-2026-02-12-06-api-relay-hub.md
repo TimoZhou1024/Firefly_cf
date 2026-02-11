@@ -1,13 +1,14 @@
 ---
-title: "API 中转站实测与选型清单（2026 年 2 月）"
-date: 2026-02-12
+title: API 中转站实测与选型清单（2026 年 2 月）
+published: 2026-02-12
+description: 一份面向 AI 开发者的 API 中转站筛选清单，包含监测网站、候选服务与实用选型标准。
 tags:
-- API
-- AI
-- 工具
-- 折腾
-categories:
-- 技术
+  - API
+  - AI
+  - 工具
+  - 折腾
+category: 技术
+draft: false
 ---
 
 最近在整理 AI API 中转服务时，我把常用的监测站点和候选服务做了一份清单，方便后续快速对比可用性、稳定性和价格。

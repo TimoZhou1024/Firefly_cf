@@ -9,17 +9,25 @@ description: "与优秀的朋友们一起成长"
 
 申请友链前请先在自己网站添加本站友链，请使用以下信息：
 
-```yaml
+<!-- ```yaml
 站点名称: 夏夜流萤
 站点描述: 飞萤之火自无梦的长夜亮起，绽放在终竟的明天。
 站点链接: https://blog.cuteleaf.cn
 头像链接: https://q1.qlogo.cn/g?b=qq&nk=7618557&s=640
 
+``` -->
+
+```yaml
+站点名称: 远梦清思
+站点描述: 一个热爱技术和分享的博客，记录我的学习和成长之路。
+站点链接: https://blog.ymqs.win
+头像链接: https://i2.hdslb.com/bfs/face/efd6bae2e6a21bc40a2ca7462b841030720b396c.jpg
+
 ```
 
 ## ✉️申请友链
 
-请将您的网站信息发送邮件至：`xxx@xxx.com`
+请将您的网站信息发送邮件至：`si.yuanzhou1024@gmail.com`
 
 **邮件标题**：`友链申请 - [您的站点名称]`
 

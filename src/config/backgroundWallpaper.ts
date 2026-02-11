@@ -24,17 +24,26 @@ export const backgroundWallpaper: BackgroundWallpaperConfig = {
 			// 是否启用主页横幅文字
 			enable: true,
 			// 主页横幅主标题
-			title: "Lovely firefly!",
+			// title: "Lovely firefly!",
+			title: "404 Brain Not Found",
 			// 主页横幅主标题字体大小
 			titleSize: "3.8rem",
 			// 主页横幅副标题
+			// subtitle: [
+			// 	"In Reddened Chrysalis, I Once Rest",
+			// 	"From Shattered Sky, I Free Fall",
+			// 	"Amidst Silenced Stars, I Deep Sleep",
+			// 	"Upon Lighted Fyrefly, I Soon Gaze",
+			// 	"From Undreamt Night, I Thence Shine",
+			// 	"In Finalized Morrow, I Full Bloom",
+			// ],
 			subtitle: [
-				"In Reddened Chrysalis, I Once Rest",
-				"From Shattered Sky, I Free Fall",
-				"Amidst Silenced Stars, I Deep Sleep",
-				"Upon Lighted Fyrefly, I Soon Gaze",
-				"From Undreamt Night, I Thence Shine",
-				"In Finalized Morrow, I Full Bloom",
+				"这里只有一个正在摸鱼的博主...",
+				"又在写 Bug 了吗？",
+				"这个页面由咖啡和焦虑驱动...",
+				"CTRL + C, CTRL + V 工程师...",
+				"我要悄悄努力，然后惊艳... 算了太累了",
+				"Loading success... but logic failed.",
 			],
 			// 主页横幅副标题字体大小
 			subtitleSize: "1.5rem",

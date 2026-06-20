@@ -70,17 +70,26 @@ export const backgroundWallpaper: BackgroundWallpaperConfig = {
 			// 是否允许用户通过控制面板切换横幅标题显示
 			switchable: true,
 			// 主页横幅主标题
-			title: "Lovely firefly!",
+			// title: "Lovely firefly!",
+			title: "404 Brain Not Found",
 			// 主页横幅主标题字体大小
 			titleSize: "3.8rem",
 			// 主页横幅副标题
+			// subtitle: [
+			// 	"In Reddened Chrysalis, I Once Rest",
+			// 	"From Shattered Sky, I Free Fall",
+			// 	"Amidst Silenced Stars, I Deep Sleep",
+			// 	"Upon Lighted Fyrefly, I Soon Gaze",
+			// 	"From Undreamt Night, I Thence Shine",
+			// 	"In Finalized Morrow, I Full Bloom",
+			// ],
 			subtitle: [
-				"In Reddened Chrysalis, I Once Rest",
-				"From Shattered Sky, I Free Fall",
-				"Amidst Silenced Stars, I Deep Sleep",
-				"Upon Lighted Fyrefly, I Soon Gaze",
-				"From Undreamt Night, I Thence Shine",
-				"In Finalized Morrow, I Full Bloom",
+				"这里只有一个正在摸鱼的博主...",
+				"又在写 Bug 了吗？",
+				"这个页面由咖啡和焦虑驱动...",
+				"CTRL + C, CTRL + V 工程师...",
+				"我要悄悄努力，然后惊艳... 算了太累了",
+				"Loading success... but logic failed.",
 			],
 			// 主页横幅副标题字体大小
 			subtitleSize: "1.5rem",
@@ -100,7 +109,7 @@ export const backgroundWallpaper: BackgroundWallpaperConfig = {
 		// 导航栏配置
 		navbar: {
 			// 导航栏透明模式："semi" 半透明，"full" 完全透明，"semifull" 动态透明
-			transparentMode: "semi",
+			transparentMode: "semifull",
 			// 是否开启毛玻璃模糊效果，开启可能会影响页面性能，如果不开启则是半透明，请根据自己的喜好开启
 			enableBlur: true,
 			// 毛玻璃模糊度

@@ -6,21 +6,21 @@ const SITE_LANG = "zh_CN";
 
 export const siteConfig: SiteConfig = {
 	// 站点标题
-	title: "Firefly",
+	title: "远梦清思的小站",
 
 	// 站点副标题
-	subtitle: "Demo site",
+	subtitle: "分享技术与兴趣的个人博客",
 
 	// 站点 URL
-	site_url: "https://firefly.cuteleaf.cn",
+	site_url: "https://blog.ymqs.win",
 
 	// 站点描述
 	description:
-		"Firefly 是一款基于 Astro 框架和 Fuwari 模板开发的清新美观且现代化个人博客主题模板，专为技术爱好者和内容创作者设计。该主题融合了现代 Web 技术栈，提供了丰富的功能模块和高度可定制的界面，让您能够轻松打造出专业且美观的个人博客网站。",
+		"远梦清思的小站是一个基于 Astro 框架和 Fuwari 模板开发的个人博客，分享技术文章、ACGN 相关内容以及个人兴趣。",
 
 	// 站点关键词
 	keywords: [
-		"Firefly",
+		"远梦清思",
 		"Fuwari",
 		"Astro",
 		"ACGN",
@@ -74,11 +74,11 @@ export const siteConfig: SiteConfig = {
 		// 4. 网络图片: { type: "url", value: "https://example.com/logo.png", alt: "Logo" }
 		logo: {
 			type: "image",
-			value: "assets/images/firefly.png",
-			alt: "🍀",
+			value: "/assets/images/favicon.ico",
+			alt: "🍀 远梦清思的小站",
 		},
 		// 导航栏标题
-		title: "Firefly",
+		title: "远梦清思的小站",
 		// 全宽导航栏，导航栏是否占满屏幕宽度
 		widthFull: false,
 		// 导航菜单对齐方式，left：左对齐，center：居中
@@ -160,7 +160,7 @@ export const siteConfig: SiteConfig = {
 	// bangumi配置
 	bangumi: {
 		// Bangumi用户ID
-		userId: "1143164",
+		userId: "1212212",
 		// 数据模式：static=构建时获取，dynamic=客户端实时获取
 		// static 模式在构建时获取数据并静态渲染，部署后数据不更新
 		// dynamic 模式在浏览器中实时请求 API，始终显示最新数据

@@ -1,4 +1,4 @@
-import type { ExpressiveCodeConfig } from "../types/config";
+import type { ExpressiveCodeConfig } from "../types/expressiveCodeConfig";
 
 /**
  * expressive-code配置
@@ -22,5 +22,11 @@ export const expressiveCodeConfig: ExpressiveCodeConfig = {
 		lineThreshold: 15, // 当代码行数超过15行时显示折叠按钮
 		previewLines: 8, // 折叠时显示前8行
 		defaultCollapsed: true, // 默认折叠长代码块
+	},
+
+	// 语言徽章插件配置
+	pluginLanguageBadge: {
+		// 是否启用语言徽章插件
+		enable: false,
 	},
 };

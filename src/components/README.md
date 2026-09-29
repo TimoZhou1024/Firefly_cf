@@ -8,33 +8,36 @@ Firefly 项目中所有可复用组件的集中管理。组件按照功能和职
 
 负责整体页面框架和布局结构的组件。
 
-- `Footer.astro` - 页脚组件
-- `Navbar.astro` - 导航栏组件
-- `SideBar.astro` - 侧边栏组件
-- `PostPage.astro` - 文章页面布局组件
-- `PostCard.astro` - 文章卡片组件
-- `PostMeta.astro` - 文章元数据组件
+- `CategoryBar.astro` - 分类栏组件
 - `ConfigCarrier.astro` - 配置载体组件
 - `DropdownMenu.astro` - 下拉菜单组件
+- `Footer.astro` - 页脚组件
+- `Navbar.astro` - 导航栏组件
 - `NavMenuPanel.astro` - 导航菜单面板
+- `PostCard.astro` - 文章卡片组件
+- `PostMeta.astro` - 文章元数据组件
+- `PostPage.astro` - 文章页面布局组件
+- `SideBar.astro` - 侧边栏组件
 
 ### 🎮 controls/ - 导航和交互控件
 
 页面导航和用户交互功能组件。
 
 **导航控件**
+- `BackToComment.astro` - 返回评论区按钮
 - `BackToHome.astro` - 返回主页按钮
 - `BackToTop.astro` - 返回顶部按钮
-- `FloatingTOC.astro` - 浮动目录组件
 - `FloatingControls.astro` - 右下角悬浮控件容器
+- `FloatingTOC.astro` - 浮动目录组件
+- `ScrollDownIndicator.astro` - 向下滚动指示器
 
 **交互组件**
-- `LightDarkSwitch.svelte` - 主题切换组件
-- `LayoutSwitchButton.svelte` - 布局切换按钮
-- `Search.svelte` - 搜索功能组件
 - `ArchivePanel.svelte` - 归档面板组件
 - `DisplaySettings.svelte` - 显示设置组件
 - `DisplaySettingsIntegrated.svelte` - 集成显示设置组件
+- `LayoutSwitchButton.svelte` - 布局切换按钮
+- `LightDarkSwitch.svelte` - 主题切换组件
+- `Search.svelte` - 搜索功能组件
 - `WallpaperSwitch.svelte` - 壁纸模式切换组件
 
 ### 🔧 common/ - 公共可复用组件
@@ -42,25 +45,25 @@ Firefly 项目中所有可复用组件的集中管理。组件按照功能和职
 通用的 UI 组件和工具组件，支持跨项目复用。
 
 **基础 UI 组件**
-- `DropdownPanel.astro`/`.svelte` - 下拉面板容器
-- `DropdownItem.astro`/`.svelte` - 下拉选项
-- `FloatingButton.astro` - 悬浮按钮基础组件
-- `Icon.svelte` - 图标组件（带加载状态和错误处理）
 - `ButtonLink.astro` - 链接按钮
 - `ButtonTag.astro` - 标签按钮
+- `DropdownItem.astro` / `.svelte` - 下拉选项
+- `DropdownPanel.astro` / `.svelte` - 下拉面板容器
+- `FloatingButton.astro` - 悬浮按钮基础组件
+- `Icon.svelte` - 图标组件（带加载状态和错误处理）
 - `WidgetLayout.astro` - 小部件布局容器
 
 **内容和展示组件**
+- `CoverImage.astro` - 封面图组件（支持本地图片和随机图API）
 - `ImageWrapper.astro` - 图片包装器（支持本地和远程图片）
-- `RandomCoverImage.astro` - 随机封面图组件（带加载指示器和水印）
 - `Markdown.astro` - Markdown 内容样式包装器
 - `PioMessageBox.astro` - 消息框组件（Live2D/Spine 消息显示）
 
 **分页组件**
+- `ClientPagination.svelte` - 客户端分页（JavaScript 控制）
 - `Pagination.astro` - 静态路由分页（Astro 原生）
-- `ClientPagination.astro` - 客户端分页（JavaScript 控制）
 
-### 🧩 widget/ - 侧边栏小部件
+### 🧩 widget/ - 小部件
 
 侧边栏中使用的各种功能小部件。
 
@@ -71,10 +74,10 @@ Firefly 项目中所有可复用组件的集中管理。组件按照功能和职
 - `Music.astro` - 音乐播放器小部件
 - `Profile.astro` - 个人信息/社交链接小部件
 - `SidebarTOC.astro` - 侧边栏目录组件
+- `SiteInfo.astro` - 站点信息组件
 - `SiteStats.astro` - 站点统计组件
-- `Tags.astro` - 标签组件
-- `Live2DWidget.astro` - Live2D 看板娘组件
 - `SpineModel.astro` - Spine 看板娘组件
+- `Tags.astro` - 标签组件
 
 ### ✨ features/ - 全局功能特效组件
 
@@ -82,15 +85,18 @@ Firefly 项目中所有可复用组件的集中管理。组件按照功能和职
 
 **管理器（初始化和管理功能）**
 - `FancyboxManager.astro` - Fancybox 图片查看器管理
-- `KatexManager.astro` - Katex 数学公式渲染管理
 - `FontManager.astro` - 字体加载和管理
+- `KatexManager.astro` - Katex 数学公式渲染管理
+- `MusicManager.astro` - 全局音乐播放管理器（单例，管理唯一 audio 元素和播放状态，通过 CustomEvent 同步所有 MusicPlayer 视图实例）
 
 **功能组件**
-- `SakuraEffect.astro` - 樱花飘落特效
-- `TypewriterText.astro` - 打字机动画效果
-- `OverlayWallpaper.astro` - 背景壁纸覆盖层
+- `EncryptedContent.astro` - 加密内容组件
+- `EncryptedPost.astro` - 加密文章组件
 - `Live2DWidget.astro` - Live2D 看板娘组件
+- `MusicPlayer.astro` - 音乐播放器 UI 视图控制器（纯 UI，委托 MusicManager 进行播放控制）
+- `SakuraEffect.astro` - 樱花飘落特效
 - `SpineModel.astro` - Spine 看板娘组件
+- `TypewriterText.astro` - 打字机动画效果
 
 ### 📃 pages/ - 页面特定组件
 
@@ -99,10 +105,15 @@ Firefly 项目中所有可复用组件的集中管理。组件按照功能和职
 - `AdvancedSearch.svelte` - 高级搜索组件
 
 **pages/bangumi/** - 番组计划页面组件
+- `BangumiGrid.svelte` - 番组网格布局组件
 - `BangumiSection.astro` - 番组分类展示组件
-- `Card.astro` - 番组卡片组件
-- `FilterControls.astro` - 筛选控制组件
-- `TabNav.astro` - 标签导航组件
+- `Card.svelte` - 番组卡片组件
+- `FilterControls.svelte` - 筛选控制组件
+- `TabNav.svelte` - 标签导航组件
+
+**pages/gallery/** - 相册页面组件
+- `AlbumCard.astro` - 相册卡片组件
+- `PhotoCard.astro` - 照片卡片组件
 
 ### 💬 comment/ - 评论系统组件
 
@@ -120,13 +131,16 @@ Firefly 项目中所有可复用组件的集中管理。组件按照功能和职
 网站分析和统计集成组件。
 
 - `GoogleAnalytics.astro` - Google Analytics
+- `La51Analytics.astro` - 51la 统计
 - `MicrosoftClarity.astro` - Microsoft Clarity
+- `UmamiAnalytics.astro` - Umami 统计
 
 ### 🔧 misc/ - 杂项工具组件
 
 其他辅助和工具类组件。
 
 - `License.astro` - 许可证信息显示
+- `RecommendedPost.astro` - 推荐文章组件
 - `SharePoster.svelte` - 分享海报生成
 
 ---
@@ -144,5 +158,3 @@ Firefly 项目中所有可复用组件的集中管理。组件按照功能和职
 | **comment/** | 评论系统 | 第三方服务集成 |
 | **analytics/** | 数据统计 | 分析和统计服务 |
 | **misc/** | 工具和辅助 | 其他杂项功能 |
-
-

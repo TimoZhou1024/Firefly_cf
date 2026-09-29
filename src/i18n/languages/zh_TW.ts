@@ -17,9 +17,12 @@ export const zh_TW: Translation = {
 
 	[Key.tags]: "標籤",
 	[Key.categories]: "分類",
+	[Key.allCategories]: "全部分類",
+	[Key.allTags]: "全部標籤",
 	[Key.recentPosts]: "最新文章",
 	[Key.postList]: "文章列表",
-	[Key.tableOfContents]: "目錄",
+	[Key.tableOfContents]: "文章目錄",
+	[Key.tocEmpty]: "目前頁面沒有目錄",
 	[Key.music]: "音樂",
 	[Key.musicNoPlaying]: "暫未播放",
 	[Key.musicLyrics]: "歌詞",
@@ -52,6 +55,8 @@ export const zh_TW: Translation = {
 		"您還未在配置文件中啟用評論系統，啟用後訪客才可在此留言",
 	[Key.friends]: "友鏈",
 	[Key.friendsDescription]: "這裡是我的朋友們，歡迎互相訪問交流",
+	[Key.searchFriends]: "搜尋友鏈...",
+	[Key.friendsEmpty]: "暫無友情連結",
 	[Key.guestbook]: "留言",
 	[Key.guestbookDescription]: "歡迎在這裡留下你的足跡，分享你的想法和建議",
 	[Key.untitled]: "無標題",
@@ -64,6 +69,8 @@ export const zh_TW: Translation = {
 	[Key.minutesCount]: "分鐘",
 	[Key.postCount]: "篇文章",
 	[Key.postsCount]: "篇文章",
+	[Key.tagsCount]: "個標籤",
+	[Key.noData]: "暫無資料",
 
 	[Key.themeColor]: "主題色相",
 
@@ -72,9 +79,12 @@ export const zh_TW: Translation = {
 	[Key.systemMode]: "跟隨系統",
 
 	[Key.more]: "更多",
+	[Key.collapse]: "收起",
 
 	[Key.author]: "作者",
 	[Key.publishedAt]: "發布於",
+	[Key.updatedAt]: "更新於",
+	[Key.readTime]: "閱讀時長",
 	[Key.license]: "許可協議",
 	[Key.bangumi]: "番組計劃",
 
@@ -117,6 +127,9 @@ export const zh_TW: Translation = {
 	[Key.bangumiNoDataDescription]: "該分類下還沒有任何條目",
 	[Key.bangumiEmpty]: "暫無數據",
 	[Key.bangumiEmptyReason]: "可能的原因：用戶名不存在、網絡連接問題或API限制",
+	[Key.bangumiFetchError]: "Bangumi 資料拉取失敗",
+	[Key.bangumiFetchErrorDesc]:
+		"構建時從 Bangumi API 獲取資料失敗，該頁面內容暫不可用。",
 	[Key.bangumiUsername]: "用戶名",
 	[Key.bangumiApi]: "API",
 	[Key.bangumiConfigTip]: "提示：請在頁面配置中設置正確的Bangumi用戶名",
@@ -192,34 +205,59 @@ export const zh_TW: Translation = {
 	// 置頂
 	[Key.pinned]: "置頂",
 
+	// 相關文章推薦
+	[Key.relatedPosts]: "相關文章",
+	[Key.randomPosts]: "隨機文章",
+	[Key.smartRecommend]: "智慧推薦",
+	[Key.randomRecommend]: "隨機推薦",
+	[Key.noRelatedPosts]: "暫無相關文章",
+	[Key.noRandomPosts]: "暫無隨機文章",
+
+	// 加密
+	[Key.postEncrypted]: "本文已加密",
+
 	// 壁紙模式
 	[Key.wallpaperMode]: "壁紙模式",
 	[Key.wallpaperBannerMode]: "橫幅壁紙",
+	[Key.wallpaperFullscreenMode]: "全屏壁紙",
 	[Key.wallpaperOverlayMode]: "全屏透明",
 	[Key.wallpaperNoneMode]: "純色背景",
+
+	// 壁紙設置
+	[Key.wallpaperSettings]: "壁紙設置",
+	[Key.wallpaperTitle]: "首頁壁紙標題",
+	[Key.wallpaperCarousel]: "壁紙輪播",
+	[Key.wavesAnimation]: "水波紋動畫",
+	[Key.gradientTransition]: "漸變過渡",
+	[Key.sakuraEffect]: "櫻花特效",
+	[Key.effectsSettings]: "特效設定",
+	[Key.overlaySettings]: "透明設定",
+	[Key.overlayOpacity]: "桌布透明度",
+	[Key.overlayBlur]: "背景模糊度",
+	[Key.overlayCardOpacity]: "卡片透明度",
 
 	// 文章佈局
 	[Key.postListLayout]: "文章佈局",
 	[Key.postListLayoutList]: "清單",
 	[Key.postListLayoutGrid]: "網格",
 
-	// 贊助頁面
-	[Key.sponsor]: "贊助",
-	[Key.sponsorTitle]: "贊助支持",
+	// 打賞頁面
+	[Key.sponsor]: "打賞",
+	[Key.sponsorTitle]: "打賞支持",
 	[Key.sponsorDescription]:
-		"如果我的內容對你有幫助，歡迎通過以下方式贊助我，你的支持是我持續創作的動力！",
-	[Key.sponsorMethods]: "贊助方式",
-	[Key.sponsorList]: "贊助列表",
-	[Key.sponsorEmpty]: "暫無贊助記錄",
+		"如果我的內容對你有幫助，歡迎通過以下方式打賞我，你的支持是我持續創作的動力！",
+	[Key.sponsorMethods]: "打賞方式",
+	[Key.sponsorList]: "打賞列表",
+	[Key.sponsorEmpty]: "暫無打賞記錄",
 	[Key.sponsorAmount]: "金額",
 	[Key.sponsorDate]: "日期",
 	[Key.sponsorMessage]: "留言",
 	[Key.sponsorAnonymous]: "匿名",
-	[Key.scanToSponsor]: "掃碼贊助",
-	[Key.sponsorGoTo]: "前往贊助",
+	[Key.scanToSponsor]: "掃碼打賞",
+	[Key.sponsorGoTo]: "前往打賞",
 	[Key.sponsorButton]: "支持與分享",
 	[Key.sponsorButtonText]:
-		"如果這篇文章對你有幫助，歡迎分享給更多人或贊助支持！",
+		"如果這篇文章對你有幫助，歡迎分享給更多人或打賞支持！",
 
 	[Key.shareOnSocial]: "文章分享",
 	[Key.shareOnSocialDescription]: "如果這篇文章對你有幫助，歡迎分享給更多人！",
@@ -235,6 +273,20 @@ export const zh_TW: Translation = {
 	[Key.siteStatsDaysAgo]: "{days} 天前",
 	[Key.siteStatsDays]: "{days} 天",
 	[Key.today]: "今天",
+
+	// 站點資訊
+	[Key.siteInfo]: "站點資訊",
+	[Key.siteInfoBuildTime]: "構建時間",
+	[Key.siteInfoBuildPlatform]: "構建平台",
+	[Key.siteInfoBlogVersion]: "部落格版本",
+	[Key.siteInfoAstroVersion]: "Astro",
+	[Key.siteInfoNodeVersion]: "Node",
+	[Key.siteInfoPnpmVersion]: "pnpm",
+	[Key.siteInfoSystem]: "系統資訊",
+	[Key.siteInfoExpand]: "展開構建資訊",
+	[Key.siteInfoCollapse]: "收起構建資訊",
+	[Key.siteInfoDomain]: "站點域名",
+	[Key.siteInfoLicense]: "文章許可",
 
 	// 日曆組件
 	[Key.calendarSunday]: "日",
@@ -256,6 +308,9 @@ export const zh_TW: Translation = {
 	[Key.calendarOctober]: "10月",
 	[Key.calendarNovember]: "11月",
 	[Key.calendarDecember]: "12月",
+	[Key.calendar]: "站點日曆",
+	[Key.calendarHeatmapWeek]: "{month}月第{week}週，{count}篇文章",
+	[Key.advertisement]: "廣告",
 
 	[Key.shareArticle]: "分享",
 	[Key.generatingPoster]: "海報生成中...",
@@ -265,8 +320,33 @@ export const zh_TW: Translation = {
 	[Key.scanToRead]: "掃碼閱讀文章",
 
 	// 代碼區塊折疊配置
-	[Key.codeCollapsibleShowMore]: "顯示更多",
-	[Key.codeCollapsibleShowLess]: "顯示更少",
+	[Key.codeCollapsibleShowMore]: "展開",
+	[Key.codeCollapsibleShowLess]: "收起",
 	[Key.codeCollapsibleExpanded]: "代碼區塊已展開",
 	[Key.codeCollapsibleCollapsed]: "代碼區塊已折疊",
+
+	// 相簿頁面
+	[Key.gallery]: "相簿",
+	[Key.galleryDescription]: "記錄生活中的美好瞬間",
+	[Key.galleryPhotos]: "張照片",
+	[Key.galleryAlbums]: "本相簿",
+	[Key.galleryNoAlbums]: "暫無相簿",
+	[Key.galleryBackToAlbums]: "返回相簿列表",
+	[Key.searchAlbums]: "搜尋相簿...",
+
+	// 密碼保護
+	[Key.passwordProtected]: "密碼保護",
+	[Key.passwordProtectedDesc]: "此內容已被密碼保護，請輸入密碼查看。",
+	[Key.passwordHint]: "提示",
+	[Key.passwordPlaceholder]: "請輸入密碼",
+	[Key.passwordSubmit]: "解鎖",
+	[Key.passwordError]: "密碼錯誤，請重試。",
+	[Key.passwordProtectedRss]: "本文已加密保護，請訪問網站查看。",
+
+	// 背景影片播放器
+	[Key.videoPlay]: "播放背景影片",
+	[Key.videoPause]: "暫停背景影片",
+	[Key.videoPrev]: "上一個影片",
+	[Key.videoNext]: "下一個影片",
+	[Key.videoLoadError]: "影片載入失敗",
 };
